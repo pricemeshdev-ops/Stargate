@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stargate-v3"
+version = "0.1.0"
+description = "Epoch 3 STARGATE gateway boilerplate"
+requires-python = ">=3.11"
+dependencies = [
+  "rich>=13.7",
+]
+
+[project.scripts]
+stargate = "stargate_v3.app:main"
+stargate-starmail = "stargate_v3.shells.starmail:main"
+stargate-stareye = "stargate_v3.shells.stareye:main"
+stargate-pipeline = "stargate_v3.shells.pipeline:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+

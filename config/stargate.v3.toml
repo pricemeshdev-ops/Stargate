@@ -1,0 +1,43 @@
+[gateway]
+name = "STARGATE"
+version = "3.0"
+mode = "boilerplate"
+root = "/home/user/AA-SG-LAUNCHER/STARGATE"
+legacy_epoch2_root = "/home/user/PriceSEER"
+live_integrations_enabled = false
+
+[owners]
+starmail = "Mercury"
+price_seer_signoff = "Odin"
+planning = "Euclid"
+
+[[sections]]
+key = "animal"
+label = "Animal Live"
+status = "SHELL"
+
+[[sections]]
+key = "animal-reports"
+label = "Animal Reports"
+status = "SHELL"
+
+[[sections]]
+key = "pseer"
+label = "PriceSEER"
+status = "SHELL"
+
+[[sections]]
+key = "pmesh"
+label = "PriceMESH"
+status = "SHELL"
+
+[[sections]]
+key = "blog"
+label = "Blog Library"
+status = "SHELL"
+
+[[sections]]
+key = "epoch2"
+label = "Epoch 2 Legacy Gateway"
+status = "LOCKED_REFERENCE"
+

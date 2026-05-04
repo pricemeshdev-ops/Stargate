@@ -1,0 +1,18 @@
+"""Shared STARGATE v3 terminal palette."""
+
+ACCENT = "#5fd7ff"
+ACCENT_ANIMAL = "#28d7a6"
+ACCENT_PSEER = "#9ed072"
+ACCENT_PMESH = "#ffd166"
+ACCENT_BLOG = "#c678dd"
+ACCENT_WARN = "#ffcc66"
+ACCENT_FAIL = "#ff5f5f"
+TEXT = "#e8eef2"
+MUTED = "#8ea0ad"
+DIM = "#5e7180"
+FRAME = "#315f86"
+BACK = "#5fd7ff"
+LAY = "#ff79c6"
+GOOD = "#2ee88f"
+BAD = "#ff5f5f"
+
