@@ -12,9 +12,17 @@ GitHub target:
 
 ## Purpose
 
-STARGATE v3.0 is the local user shell for whole-organisation orchestration telemetry across PriceMESH, PriceSEER, and PriceLIVE/Animal.
+STARGATE v3.0 is the local user shell for whole-organisation orchestration telemetry across PriceMESH, PriceSEER, PriceLIVE/Animal, and the ORG supervisor layer.
 
 It is intentionally blank at launch: no live data access, no runtime mutation, no order execution, and no production service control.
+
+Epoch 3 topology label:
+
+```text
+LIVE < MESH < SEER <>>>=ORG
+```
+
+This label is shell topology only. It does not certify runtime connectivity or live readiness.
 
 It provides repo-ready templates and TUI placeholders for:
 
@@ -27,12 +35,24 @@ It provides repo-ready templates and TUI placeholders for:
 - PriceSEER
 - PriceMESH
 - Blog Library
+- Google Drive Sync
 - Epoch 2 Legacy Gateway handoff
+
+The desktop portal identity uses the STARGATE-owned red inverted pentagram asset:
+
+- `assets/stargate-v3-red-inverted-pentagram.svg`
 
 ## Organisation Role
 
 The operator should be able to enter one local CLI and see or route the whole organisation:
 
+- USER: operator command and approval boundary
+- LUCY: top-level ORG supervisor, routing gate, and StarMail packet author
+- ANUBIS: PriceLIVE / Animal execution-mechanics lane
+- SAMAEL: PriceMESH observation and truth lane
+- ODIN: PriceSEER replay, modelling, evidence, and signoff lane
+- EUCLID: research and milestone planning lane
+- MERCURY: STARGATE, StarMail, diagnostics, and shell behavior lane
 - PriceMESH: upstream truth, feed state, runtime publication, and source governance
 - PriceSEER: modelling, datasets, research reports, and supervisor signoff surfaces
 - PriceLIVE/Animal: live shadow telemetry, result ledgers, and future live-key observation
@@ -40,6 +60,7 @@ The operator should be able to enter one local CLI and see or route the whole or
 - StarEye: read-only market replay and trade-forensics inspection
 - Pipeline: cross-system board-truth telemetry
 - Blog Library: research narrative and doctrine history
+- Google Drive Sync: operator-controlled publication to My Drive plus isolated DriveSync exchange
 
 STARGATE is the local shell that glues these surfaces together for the user. It is not the authority of record for PriceMESH, PriceSEER, or PriceLIVE data.
 
@@ -67,6 +88,36 @@ stargate-starmail
 stargate-stareye
 stargate-pipeline
 ```
+
+Local desktop entry templates:
+
+- `desktop/stargate-v3.desktop`
+- `desktop/stargate-v3-starmail.desktop`
+
+Both entries open terminal-backed blank shells and use:
+
+- `assets/stargate-v3-red-inverted-pentagram.svg`
+
+They call opener scripts so fixed-size TUIs launch at the intended terminal geometry:
+
+- `scripts/open-stargate-gateway` -> `160x44`
+- `scripts/open-starmail` -> `132x38`
+
+Installing or pinning them into a desktop environment remains an operator action.
+
+Google Drive sync:
+
+```bash
+../scripts/gdrive-dry-run-push.sh
+../scripts/gdrive-push.sh
+../scripts/drivesync-dry-run-pull.sh
+../scripts/drivesync-pull.sh
+```
+
+Feature contract:
+
+- `docs/GOOGLE_DRIVE_SYNC_FEATURE.md`
+- `docs/rollout/GOOGLE_DRIVE_SYNC_ROLLOUT.md`
 
 ## Design Posture
 

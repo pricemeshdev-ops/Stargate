@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="STARGATE v3 red inverted pentagram icon">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#08090b"/>
+      <stop offset="100%" stop-color="#1b0b0b"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff8a8a"/>
+      <stop offset="45%" stop-color="#ff3030"/>
+      <stop offset="100%" stop-color="#8f1111"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="url(#bg)"/>
+  <circle cx="256" cy="256" r="188" fill="none" stroke="url(#red)" stroke-width="18"/>
+  <circle cx="256" cy="256" r="156" fill="none" stroke="#551818" stroke-width="6"/>
+  <path
+    d="M256 408
+       L352.79 110.14
+       L99.66 294.86
+       L412.34 294.86
+       L159.21 110.14 Z"
+    fill="none"
+    stroke="url(#red)"
+    stroke-width="22"
+    stroke-linejoin="round"
+    stroke-linecap="round"/>
+  <path
+    d="M256 392
+       L343.37 123.11
+       L114.85 289.89
+       L397.15 289.89
+       L168.63 123.11 Z"
+    fill="none"
+    stroke="#ffd0d0"
+    stroke-opacity="0.42"
+    stroke-width="6"
+    stroke-linejoin="round"
+    stroke-linecap="round"/>
+</svg>

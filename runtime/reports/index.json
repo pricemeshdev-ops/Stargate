@@ -1,0 +1,620 @@
+{
+  "schema": "stargate.report_archive.v1",
+  "updated_at": "2026-05-14",
+  "nodes": {
+    "pseer": {
+      "label": "Pseer Reports",
+      "owner": "Odin/PriceSEER with Euclid research authorship",
+      "reports": [
+        {
+          "id": "PSEER-EUCLID-E3-OPENING-BACKTEST-STATE-MEMORY-2026-05-06",
+          "title": "Epoch 3 Opening Backtest: State Memory And Split Plan",
+          "node": "PriceSEER",
+          "author": "Euclid",
+          "owner": "Odin/PriceSEER",
+          "status": "ACTIVE_HANDOFF",
+          "created_at": "2026-05-06",
+          "source_path": "/home/user/AA-SG-LAUNCHER/PriceSEER/docs/EPOCH3_OPENING_BACKTEST_STATE_MEMORY_REPORT_2026-05-06.md",
+          "summary": "Opening Epoch 3 PriceSEER backtest agenda for Animal-compatible rolling state memory, split reports, no-fire diagnostics, and Anubis shadow handoff.",
+          "authority": "Euclid research interpretation; PriceSEER modelling boundary",
+          "boundary": "Planning/backtest design only. No live execution, service control, secret inspection, or Betfair order actions.",
+          "tags": [
+            "epoch3",
+            "priceseer",
+            "euclid",
+            "state-memory",
+            "rolling-features",
+            "animal-shadow",
+            "backtest-opening"
+          ],
+          "required_state_memory": [
+            "30s/60s/120s price velocity",
+            "volume acceleration",
+            "multi-frame order-book imbalance trend",
+            "cross-runner pressure",
+            "market-level favourite compression",
+            "late reversal shape",
+            "SP projection drift over time"
+          ]
+        },
+        {
+          "id": "PSEER-EUCLID-E3-SP3-RAW-STREAM-FORENSICS-2026-05-11",
+          "title": "Epoch 3 SP3 Raw Stream Forensics: Q1 WIN Calibration",
+          "node": "PriceSEER",
+          "author": "Euclid/Odin",
+          "owner": "Odin/PriceSEER",
+          "status": "REPLAY_EVIDENCE",
+          "created_at": "2026-05-11",
+          "source_path": "/home/user/AA-SG-LAUNCHER/PriceSEER/docs/EPOCH3_SP3_RAW_STREAM_FORENSICS_2026-05-11.md",
+          "summary": "Human-readable SP3 report for the completed Q1 raw-stream incumbent evaluation. Answers the steam/drift, route, FS1 lineage, self-competition, and SP-truth questions from the Epoch 3 calibration run.",
+          "authority": "Euclid research interpretation; PriceSEER modelling evidence",
+          "boundary": "Replay/model report only. No live execution, service control, secret inspection, or Betfair order actions.",
+          "tags": [
+            "epoch3",
+            "priceseer",
+            "sp3",
+            "raw-stream",
+            "q1-2026",
+            "steam-drift",
+            "bsp-labels",
+            "incumbent-calibration"
+          ],
+          "required_state_memory": [
+            "route-level steam/drift continuation",
+            "R2P1E5/R2P2E5 forensic lineage",
+            "line-hold and clean-continuation rates",
+            "self-competition blocked-state accounting",
+            "SP/BSP label quality and missing-truth accounting"
+          ]
+        },
+        {
+          "id": "PSEER-EUCLID-E3-SP3-AUDIT-2026-05-11",
+          "title": "Epoch 3 SP3 Euclid Audit",
+          "node": "PriceSEER",
+          "author": "Euclid",
+          "owner": "Odin/PriceSEER",
+          "status": "AUDIT",
+          "created_at": "2026-05-11",
+          "source_path": "/home/user/AA-SG-LAUNCHER/PriceSEER/docs/EPOCH3_SP3_EUCLID_REPORT_AUDIT_2026-05-11.md",
+          "summary": "Audit companion for the SP3 raw-stream report covering leakage boundary, segmentation, label quality, self-competition, and remaining promotion gaps.",
+          "authority": "Euclid research audit",
+          "boundary": "Audit/report review only. No live execution, service control, secret inspection, or Betfair order actions.",
+          "tags": [
+            "epoch3",
+            "priceseer",
+            "euclid",
+            "audit",
+            "sp3",
+            "raw-stream"
+          ]
+        },
+        {
+          "id": "PSEER-EUCLID-E3-SP3-TRACE-CARDS-2026-05-11",
+          "title": "Epoch 3 SP3 Trace Cards",
+          "node": "PriceSEER",
+          "author": "Euclid/Odin",
+          "owner": "Odin/PriceSEER",
+          "status": "TRACE_EVIDENCE",
+          "created_at": "2026-05-11",
+          "source_path": "/home/user/AA-SG-LAUNCHER/PriceSEER/docs/EPOCH3_SP3_TRACE_CARDS_2026-05-11.md",
+          "summary": "Replay evidence cards for selected R2P1E5/R2P2E5 steam/drift examples in the SP3 trade-forensics template.",
+          "authority": "PriceSEER replay evidence",
+          "boundary": "Trace evidence only. No live execution, service control, secret inspection, or Betfair order actions.",
+          "tags": [
+            "epoch3",
+            "priceseer",
+            "sp3",
+            "trace-cards",
+            "r2p1e5",
+            "r2p2e5"
+          ]
+        },
+        {
+          "id": "PSEER-EUCLID-E3-SP3-OPERATOR-DECISION-2026-05-11",
+          "title": "Epoch 3 SP3 Operator Decision Report",
+          "node": "PriceSEER",
+          "author": "Euclid/Odin",
+          "owner": "Odin/PriceSEER",
+          "status": "DECISION_LAYER",
+          "created_at": "2026-05-11",
+          "source_path": "/home/user/AA-SG-LAUNCHER/PriceSEER/docs/EPOCH3_SP3_OPERATOR_DECISION_REPORT_2026-05-11.md",
+          "summary": "Operator-facing decision layer over the Q1 SP3 raw-stream forensics report: candidates, rejects, SP truth clarification, drill path, and Animal calibration action.",
+          "authority": "Euclid research interpretation; PriceSEER modelling evidence",
+          "boundary": "Replay/model decision report only. No live execution, service control, secret inspection, or Betfair order actions.",
+          "tags": [
+            "epoch3",
+            "priceseer",
+            "sp3",
+            "decision-layer",
+            "fs1",
+            "r2p1e5",
+            "r2p2e5",
+            "animal-shadow-calibration"
+          ]
+        },
+        {
+          "id": "PSEER-EUCLID-E3-EXECUTION-POLICY-GATE-CHECKLIST-2026-05-11",
+          "title": "Epoch 3 Execution Policy Gate Checklist",
+          "node": "PriceSEER",
+          "author": "Lucy/Euclid/Odin",
+          "owner": "PriceSEER + Animal + STARGATE",
+          "status": "WORKING_CHECKLIST",
+          "created_at": "2026-05-11",
+          "source_path": "/home/user/AA-SG-LAUNCHER/PriceSEER/docs/EPOCH3_EXECUTION_POLICY_GATE_CHECKLIST_2026-05-11.md",
+          "summary": "Agent + Human working checklist for promoting an Epoch 3 execution policy: T+7 policy gate, T+30 cash-test decision, and $250 AUD/day seven-day shadow target.",
+          "authority": "Shared milestone control; PriceSEER modelling, Animal shadow measurement, STARGATE operator visibility",
+          "boundary": "Execution-policy planning and shadow measurement checklist. Human approval remains required for real-cash promotion.",
+          "tags": [
+            "epoch3",
+            "execution-policy",
+            "checklist",
+            "animal-shadow",
+            "250-aud-day",
+            "sp3-lens",
+            "promotion-gate"
+          ],
+          "required_state_memory": [
+            "Epoch 3 SP3 interactive lens",
+            "decision-time feature bridge",
+            "candidate policy replay",
+            "Animal live parity",
+            "seven-day shadow-dollar target"
+          ]
+        },
+        {
+          "id": "PSEER-EUCLID-E3-250-AUD-DAILY-MILESTONE-2026-05-11",
+          "title": "Epoch 3 $250 AUD Daily Execution Milestone",
+          "node": "PriceSEER",
+          "author": "Lucy/Euclid/Odin/Anubis",
+          "owner": "PriceSEER + Animal + STARGATE",
+          "status": "ACTIVE_MILESTONE",
+          "created_at": "2026-05-11",
+          "source_path": "/home/user/AA-SG-LAUNCHER/PriceSEER/docs/EPOCH3_250_AUD_DAILY_MILESTONE_2026-05-11.md",
+          "summary": "One-page milestone for the Epoch 3 target: find, validate, and promote an Animal policy capable of $250 AUD/day seven-day shadow-dollar average, with T+7 and T+30 checkpoints.",
+          "authority": "Shared milestone control for PriceSEER modelling, Euclid feature interpretation, Animal shadow execution measurement, and STARGATE operator visibility",
+          "boundary": "Milestone and pass/fail tracking. Real-cash promotion requires human sign-off at the T+30 decision gate.",
+          "tags": [
+            "epoch3",
+            "250-aud-day",
+            "active-milestone",
+            "execution-policy",
+            "animal-shadow",
+            "sp3-lens",
+            "feature-bridge"
+          ],
+          "required_state_memory": [
+            "volume x velocity x hit rate x edge",
+            "decision-time feature bridge",
+            "interactive Epoch 3 SP3 lens",
+            "full Q1 candidate replay",
+            "seven-day Animal shadow target"
+          ]
+        },
+        {
+          "id": "PSEER-EUCLID-BASELINE-250-DAILY-STRATEGY-V1-2026-05-11",
+          "title": "BASELINE 250 Daily Strategy V1",
+          "node": "PriceSEER",
+          "author": "Euclid/Odin",
+          "owner": "PriceSEER + Euclid",
+          "status": "STRATEGY_BACKTEST_BRIEF",
+          "created_at": "2026-05-11",
+          "source_path": "/home/user/AA-SG-LAUNCHER/PriceSEER/docs/BASELINE_250_DAILY_STRATEGY_V1_2026-05-11.md",
+          "summary": "Backtest brief for the minimum viable $250 AUD/day extraction baseline: Basket A/B/C, bankroll requirement, blind evaluation rule, and current G1-G6 gaps.",
+          "authority": "Euclid strategy interpretation; Odin/PriceSEER replay evidence boundary",
+          "boundary": "Strategy backtest planning and replay-evidence requirements. Live shadow and real-cash execution require later gates and human approval.",
+          "tags": [
+            "epoch3",
+            "baseline-250",
+            "strategy-backtest",
+            "fs1",
+            "bankroll",
+            "basket-a-b-c",
+            "q1-replay"
+          ],
+          "required_state_memory": [
+            "FS1 positive-tick vs positive-ROI split",
+            "basket A/B/C policy lock",
+            "bankroll requirement and peak exposure",
+            "full Q1 blind or holdout protocol",
+            "Animal shadow rule after Basket B pass"
+          ]
+        },
+        {
+          "id": "PSEER-EUCLID-CLIPPED-EXECUTION-CAPACITY-SIM-V1-2026-05-12",
+          "title": "CLIPPED EXECUTION CAPACITY SIM V1",
+          "node": "PriceSEER",
+          "author": "Euclid/Odin/Anubis",
+          "owner": "PriceSEER + Animal + STARGATE",
+          "status": "PROMOTED_WORK_ITEM",
+          "created_at": "2026-05-12",
+          "source_path": "/home/user/AA-SG-LAUNCHER/PriceSEER/docs/CLIPPED_EXECUTION_CAPACITY_SIM_V1_2026-05-12.md",
+          "summary": "Execution-mechanics brief for clipped fills, partial fills, depth walking, repeat fires, bankroll, drawdown, and rolling 7-day $1,750 retained-profit viability.",
+          "authority": "Euclid strategy interpretation; Odin/PriceSEER replay evidence; Anubis execution-mechanics boundary",
+          "boundary": "Simulation design only. No Animal shadow rule, Betfair connection, live orders, service control, secret inspection, or cash execution.",
+          "tags": [
+            "epoch3",
+            "clipped-execution",
+            "capacity",
+            "rolling-7-day",
+            "1750-weekly",
+            "bankroll",
+            "animal-shadow-gate"
+          ],
+          "required_state_memory": [
+            "decision-time R2P1/R2P2 BACK candidate",
+            "capacity-weighted stake ladder",
+            "touch/depth/partial-fill execution",
+            "rolling 7-day retained P/L",
+            "drawdown and bankroll requirement"
+          ]
+        },
+        {
+          "id": "PSEER-EUCLID-OPERATOR-TARGET-MARKET-FORENSICS-V1-2026-05-12",
+          "title": "OPERATOR TARGET MARKET FORENSICS V1",
+          "node": "PriceSEER",
+          "author": "Euclid/Odin",
+          "owner": "PriceSEER + Operator Review",
+          "status": "BUILT",
+          "created_at": "2026-05-12",
+          "source_path": "/home/user/AA-SG-LAUNCHER/PriceSEER/docs/OPERATOR_TARGET_MARKET_FORENSICS_V1_2026-05-12.md",
+          "summary": "Operator market review pack for R2P1/R2P2 BACK T180/T300 candidates, with AU/GB, Saturday, venue, capacity, and trade-example splits before clipped-capacity simulation.",
+          "authority": "PriceSEER replay evidence with operator market-quality review",
+          "boundary": "Forensics and operator triage only. No shadow promotion, Betfair connection, live orders, service control, secret inspection, or cash execution.",
+          "tags": [
+            "epoch3",
+            "operator-forensics",
+            "venue-review",
+            "au-gb",
+            "capacity",
+            "r2p1",
+            "r2p2"
+          ],
+          "required_state_memory": [
+            "AU versus GB target split",
+            "Saturday versus non-Saturday capacity",
+            "venue-level practical capacity",
+            "operator capacity labels",
+            "trade examples for trace review"
+          ]
+        },
+        {
+          "id": "PSEER-EUCLID-GB-BACK-PROBE-V1-2026-05-12",
+          "title": "GB BACK PROBE V1",
+          "node": "PriceSEER",
+          "author": "Euclid/Odin",
+          "owner": "PriceSEER + Euclid",
+          "status": "BUILT",
+          "created_at": "2026-05-12",
+          "source_path": "/home/user/AA-SG-LAUNCHER/PriceSEER/docs/GB_BACK_PROBE_V1_2026-05-12.md",
+          "summary": "Separate GB BACK recalibration lane showing raw GB BACK is not tradable as-is and identifying the T300_390 R2P3/P3 venue-subtracted probe family.",
+          "authority": "Odin/PriceSEER replay evidence; Euclid lane interpretation",
+          "boundary": "GB recalibration probe only. No Animal shadow rule, Betfair connection, live orders, service control, secret inspection, or cash execution.",
+          "tags": [
+            "epoch3",
+            "gb-back",
+            "recalibration",
+            "venue-subtraction",
+            "t300-390",
+            "r2p3",
+            "rolling-7-day"
+          ],
+          "required_state_memory": [
+            "GB BACK raw-negative baseline",
+            "T300_390 venue-calibrated probe",
+            "R2P3/P3 CAP_DEEP/CAP_HIGH",
+            "negative drag and venue dependency",
+            "rolling 7-day viability"
+          ]
+        },
+        {
+          "id": "PSEER-EUCLID-SL3-PROTECT-CALIBRATION-V1-2026-05-12",
+          "title": "SL3 PROTECT CALIBRATION V1",
+          "node": "PriceSEER",
+          "author": "Euclid/Odin",
+          "owner": "PriceSEER + Euclid",
+          "status": "SL3_APPROX_SCREEN",
+          "created_at": "2026-05-12",
+          "source_path": "/home/user/AA-SG-LAUNCHER/PriceSEER/docs/SL3_PROTECT_CALIBRATION_V1_2026-05-12.md",
+          "summary": "Approximate -3 tick stop-loss protection screen for AU and GB lanes, including false-stop rate, rolling 7-day impact, drawdown impact, and trace-confirmation boundary.",
+          "authority": "PriceSEER summary-trace screening evidence; not ordered-tape proof",
+          "boundary": "SL3 approximation only. Requires ordered frame tape before promotion. No Animal shadow rule, Betfair connection, live orders, service control, secret inspection, or cash execution.",
+          "tags": [
+            "epoch3",
+            "sl3",
+            "protection",
+            "drawdown",
+            "false-stop",
+            "rolling-7-day",
+            "trace-required"
+          ],
+          "required_state_memory": [
+            "trace_min_ticks summary approximation",
+            "false-stopped winner rate",
+            "raw versus SL3 P/L",
+            "rolling 7-day retained P/L",
+            "SL3_TRACE_CONFIRMED promotion boundary"
+          ]
+        },
+        {
+          "id": "PSEER-EUCLID-AU-GB-VENUE-DISTRIBUTION-V1-2026-05-12",
+          "title": "AU GB Venue Distribution V1",
+          "node": "PriceSEER",
+          "author": "Euclid/Odin",
+          "owner": "PriceSEER + Operator Review",
+          "status": "BUILT",
+          "created_at": "2026-05-12",
+          "source_path": "/home/user/AA-SG-LAUNCHER/PriceSEER/docs/AU_GB_VENUE_DISTRIBUTION_V1_2026-05-12.md",
+          "summary": "Operator venue intelligence board for AU and GB BACK lanes, exposing positive/flat/negative trade counts, gross win/loss, depth, visible capacity, and best venue buckets.",
+          "authority": "PriceSEER replay evidence with operator venue-quality interpretation",
+          "boundary": "Venue triage and report recall only. No shadow promotion, Betfair connection, live orders, service control, secret inspection, or cash execution.",
+          "tags": [
+            "epoch3",
+            "venue-distribution",
+            "au",
+            "gb",
+            "positive-flat-negative",
+            "capacity",
+            "operator-review"
+          ],
+          "required_state_memory": [
+            "venue positive/flat/negative distribution",
+            "gross positive and negative P/L",
+            "touch/D3/D10 visible capacity",
+            "best bucket by venue",
+            "operator venue exclusion candidates"
+          ]
+        },
+        {
+          "id": "PSEER-EUCLID-AU-GB-FULL-VENUE-BUCKET-TABLES-V1-2026-05-12",
+          "title": "AU GB Full Venue Bucket Tables V1",
+          "node": "PriceSEER",
+          "author": "Euclid/Odin",
+          "owner": "PriceSEER + Operator Review",
+          "status": "TUI_LINKED_CACHE_AWARE",
+          "created_at": "2026-05-12",
+          "source_path": "/home/user/AA-SG-LAUNCHER/PriceSEER/docs/AU_GB_FULL_VENUE_BUCKET_TABLES_V1_2026-05-12.md",
+          "summary": "Cache-aware interactive STARGATE TUI for the full AU/GB venue and bucket distribution tables, including positive/flat/negative counts, best bucket per venue, and all bucket rows.",
+          "authority": "PriceSEER replay evidence with operator venue-quality interpretation",
+          "boundary": "Paged venue-table recall only. No shadow promotion, Betfair connection, live orders, service control, secret inspection, or cash execution.",
+          "tags": [
+            "epoch3",
+            "venue-bucket-pager",
+            "au",
+            "gb",
+            "positive-flat-negative",
+            "best-bucket",
+            "full-bucket-table"
+          ],
+          "required_state_memory": [
+            "venue positive/flat/negative distribution",
+            "best bucket per venue",
+            "all bucket rows with rows >= 3",
+            "paged terminal access",
+            "operator venue exclusion candidates"
+          ]
+        },
+        {
+          "id": "PSEER-EUCLID-DAY3-AU-BACK-HABITAT-CAPACITY-AUDIT-V1-2026-05-13",
+          "title": "DAY3 AU BACK Habitat Capacity Audit V1",
+          "node": "PriceSEER",
+          "author": "Euclid/Odin",
+          "owner": "PriceSEER + Animal + STARGATE",
+          "status": "BUILT_DEPLOYMENT_BRIEF",
+          "created_at": "2026-05-13",
+          "source_path": "/home/user/AA-SG-LAUNCHER/PriceSEER/docs/DAY3_AU_BACK_HABITAT_CAPACITY_AUDIT_V1_2026-05-13.md",
+          "summary": "Day 3 AU BACK habitat and capacity audit answering practical deployable stake size, D10 capacity curve, kept habitat, venue caps, and next raw trace-confirmation requirement.",
+          "authority": "PriceSEER replay evidence with Euclid deployment interpretation and Anubis execution-mechanics boundary",
+          "boundary": "Read-only replay and summary-depth capacity estimate. No Animal shadow rule, Betfair connection, live orders, service control, secret inspection, or cash execution.",
+          "tags": [
+            "epoch3",
+            "day3",
+            "au-back",
+            "capacity",
+            "habitat",
+            "d10",
+            "deployment-policy",
+            "trace-required"
+          ],
+          "required_state_memory": [
+            "AU BACK R2P1/R2P2 T180+T300 candidate lane",
+            "D10 target stake capacity curve",
+            "venue and habitat deployment caps",
+            "clipped deployment policy draft",
+            "ordered raw trace confirmation before promotion"
+          ]
+        },
+        {
+          "id": "PSEER-EUCLID-AU-BACK-LANE-V1-LOCK-AND-MONTHLY-DAP-PIPELINE-2026-05-13",
+          "title": "AU BACK Lane V1 Lock And Monthly DAP Pipeline",
+          "node": "PriceSEER",
+          "author": "Euclid/Odin",
+          "owner": "PriceSEER + Animal + STARGATE",
+          "status": "HOLDOUT_INGEST_RUNNING",
+          "created_at": "2026-05-13",
+          "source_path": "/home/user/AA-SG-LAUNCHER/PriceSEER/docs/AU_BACK_LANE_V1_LOCK_AND_MONTHLY_DAP_PIPELINE_2026-05-13.md",
+          "summary": "Operational lock report for AU BACK Lane V1 plus repeatable monthly Betfair DAP ingest, DNAengine staging, April/December holdout scoring, and backwards-into-2025 workflow.",
+          "authority": "PriceSEER replay evidence with Euclid lane-lock interpretation and Anubis execution-mechanics boundary",
+          "boundary": "Historical data ingest, replay, and read-only scoring only. No Betfair exchange login, orders, service control, secret inspection, or cash execution.",
+          "tags": [
+            "epoch3",
+            "au-back",
+            "lane-lock",
+            "monthly-dap",
+            "april-holdout",
+            "pro-thoroughbreds",
+            "2025-backfill"
+          ],
+          "required_state_memory": [
+            "AU BACK Lane V1 Q1 lock candidate",
+            "monthly DAP tar archive acquisition",
+            "PriceSEER curated frame and SP truth normalisation",
+            "April holdout scoring without rule changes",
+            "backfill-ready monthly workflow"
+          ]
+        },
+        {
+          "id": "PSEER-EUCLID-DAY3-Q1-TRAINED-CAMPAIGN-READY-FOR-HOLDOUT-2026-05-14",
+          "title": "DAY3 Q1 Trained Campaign Ready For Holdout",
+          "node": "PriceSEER",
+          "author": "Euclid/Odin",
+          "owner": "PriceSEER + Animal + STARGATE",
+          "status": "Q1_TRAINED_PENDING_HOLDOUT",
+          "created_at": "2026-05-14",
+          "source_path": "/home/user/AA-SG-LAUNCHER/PriceSEER/docs/DAY3_Q1_TRAINED_CAMPAIGN_READY_FOR_HOLDOUT_2026-05-14.md",
+          "summary": "Frozen Q1-trained AU BACK campaign packet for April and December holdout scoring, including the locked rule, stake frontier, venue trace priorities, and pass/fail gates.",
+          "authority": "PriceSEER replay evidence with Euclid campaign interpretation and Anubis execution-mechanics boundary",
+          "boundary": "Read-only historical scoring and holdout planning only. No Animal shadow rule, Betfair connection, live orders, service control, secret inspection, or cash execution.",
+          "tags": [
+            "epoch3",
+            "day3",
+            "q1-trained",
+            "au-back",
+            "campaign-v1",
+            "april-holdout",
+            "december-holdout",
+            "stake-frontier",
+            "trace-required"
+          ],
+          "required_state_memory": [
+            "locked AU BACK R2P1/R2P2 T180+T300 rule",
+            "Jan/Feb train and March internal holdout",
+            "April and December locked external holdout scoring",
+            "AUD 75-150 operating band and AUD 200-300 research band",
+            "ordered trace capacity proof before promotion"
+          ]
+        },
+        {
+          "id": "PSEER-EUCLID-DAY3-MAIN-VALUE-INDEX-2026-05-14",
+          "title": "DAY3 Main Value Index",
+          "node": "PriceSEER",
+          "author": "Euclid/Odin",
+          "owner": "PriceSEER + STARGATE",
+          "status": "ACTIVE_VALUE_CONTROL",
+          "created_at": "2026-05-14",
+          "source_path": "/home/user/AA-SG-LAUNCHER/PriceSEER/docs/DAY3_MAIN_VALUE_INDEX_2026-05-14.md",
+          "summary": "Main PriceSEER index explaining what each active report or board does and which work directly creates value toward the AUD 250/day retained target.",
+          "authority": "PriceSEER analyst control with Euclid campaign interpretation",
+          "boundary": "Read-only historical analysis and campaign decision support. No Betfair connection, live orders, service control, secret inspection, or cash execution.",
+          "tags": [
+            "epoch3",
+            "day3",
+            "main-index",
+            "value-control",
+            "pseer-boards",
+            "250-aud-day",
+            "campaign-finalisation"
+          ],
+          "required_state_memory": [
+            "value-creating work order",
+            "AU BACK Campaign V1 current state",
+            "board registry and decision use",
+            "April and December holdout priority",
+            "Campaign V2 capacity-quality path"
+          ]
+        },
+        {
+          "id": "PSEER-EUCLID-DAY3-ANALYST-BOARD-REGISTRY-V1-2026-05-14",
+          "title": "DAY3 Analyst Board Registry V1",
+          "node": "PriceSEER",
+          "author": "Euclid/Odin",
+          "owner": "PriceSEER + STARGATE",
+          "status": "ACTIVE_ANALYST_CONTROL",
+          "created_at": "2026-05-14",
+          "source_path": "/home/user/AA-SG-LAUNCHER/PriceSEER/docs/DAY3_ANALYST_BOARD_REGISTRY_V1_2026-05-14.md",
+          "summary": "Canonical registry for active Day 3 analyst boards, including command, source, cache location, decision use, and next action.",
+          "authority": "PriceSEER analyst control with STARGATE operator surfacing",
+          "boundary": "Read-only historical modelling and board recall only. No Betfair connection, live orders, service control, secret inspection, or cash execution.",
+          "tags": [
+            "epoch3",
+            "day3",
+            "analyst-board-registry",
+            "pseer-boards",
+            "command-index",
+            "decision-use",
+            "next-action"
+          ],
+          "required_state_memory": [
+            "active board list",
+            "commands and cache locations",
+            "decision use for every board",
+            "next analyst action",
+            "no loose boards outside registry"
+          ]
+        },
+        {
+          "id": "PSEER-EUCLID-BETFAIR-RATINGS-OVERLAY-JOIN-AUDIT-V1-2026-05-14",
+          "title": "BETFAIR_RATINGS_OVERLAY_JOIN_AUDIT_V1",
+          "node": "PriceSEER",
+          "author": "Euclid/Odin",
+          "owner": "PriceSEER + STARGATE",
+          "status": "BUILT_SMOKE_VALIDATED",
+          "created_at": "2026-05-14",
+          "source_path": "/home/user/AA-SG-LAUNCHER/PriceSEER/docs/BETFAIR_RATINGS_OVERLAY_JOIN_AUDIT_V1_2026-05-14.md",
+          "summary": "Join-audit board for testing whether Betfair ratedPrice explains FS1 economic conversion, including join coverage, value_pp distribution, side agreement, speedcat, venue, and P/L cuts.",
+          "authority": "PriceSEER analyst interpretation of public/authorised Betfair Hub model observations",
+          "boundary": "Annotation, explanation, and abstention research only. Do not promote as a filter until ratings_capture_ts exists from live polling before trade decision. No Betfair connection, live orders, service control, secret inspection, or cash execution.",
+          "tags": [
+            "epoch3",
+            "day3",
+            "betfair-ratings",
+            "join-audit",
+            "rated-price",
+            "value-pp",
+            "fs1-conversion",
+            "abstention-research",
+            "forward-capture-required"
+          ],
+          "required_state_memory": [
+            "primary question is whether Betfair ratedPrice explains FS1 economic conversion",
+            "join uses bfExchangeMarketId and bfExchangeSelectionId",
+            "value_pp is computed from ratedPrice and PriceSEER decision-time entry_price",
+            "minimum outputs include join_rate, missing IDs, ratedPrice coverage, value_pp distribution, side agreement, speedcat, venue, and P/L cuts",
+            "hard rule: no filter promotion until live polling captures ratings_capture_ts before trade decision"
+          ]
+        }
+      ]
+    },
+    "animal": {
+      "label": "Animal Reports",
+      "owner": "Anubis/PriceLIVE",
+      "reports": []
+    },
+    "pricemesh": {
+      "label": "PriceMESH Reports",
+      "owner": "Samael/PriceMESH",
+      "reports": []
+    },
+    "stargate": {
+      "label": "Stargate Reports",
+      "owner": "Mercury/STARGATE",
+      "reports": []
+    },
+    "agent-org": {
+      "label": "ORG Reports",
+      "owner": "Lucy/agent-org",
+      "reports": [
+        {
+          "id": "ORG-LUCY-30-DAY-VIABILITY-MANDATE-2026-05-11",
+          "title": "Project Notice: 30-Day Viability Mandate",
+          "node": "agent-org",
+          "author": "Lucy",
+          "owner": "Lucy/ORG supervision",
+          "status": "ACTIVE_DIRECTIVE",
+          "created_at": "2026-05-11",
+          "source_path": "/home/user/AA-SG-LAUNCHER/agent-org/directives/PROJECT_NOTICE_30_DAY_VIABILITY_MANDATE_2026-05-11.md",
+          "summary": "Governing directive placing PRICEORG in 30-day viability mode with all work subordinate to BASELINE_250_DAILY_STRATEGY_V1 and the $250 AUD/day retained-profit target.",
+          "authority": "Lucy ORG supervision and milestone control",
+          "boundary": "Governance directive only. Does not authorize Betfair connection, live orders, service control, secret inspection, or cash execution.",
+          "tags": [
+            "priceorg",
+            "lucy",
+            "30-day-viability",
+            "baseline-250",
+            "governance",
+            "mandate"
+          ]
+        }
+      ]
+    }
+  }
+}

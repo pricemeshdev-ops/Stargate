@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+TITLE="${STARGATE_STARMAIL_TERMINAL_TITLE:-STARGATE StarMail}"
+GEOMETRY="${STARGATE_STARMAIL_TERMINAL_GEOMETRY:-132x38}"
+COMMAND="cd '$ROOT' && exec '$ROOT/scripts/starmail'"
+
+if command -v gnome-terminal >/dev/null 2>&1; then
+  exec gnome-terminal --geometry="$GEOMETRY" --title="$TITLE" -- bash -lc "$COMMAND"
+fi
+
+if command -v xfce4-terminal >/dev/null 2>&1; then
+  exec xfce4-terminal --geometry="$GEOMETRY" --title="$TITLE" --command="bash -lc \"$COMMAND\""
+fi
+
+if command -v xterm >/dev/null 2>&1; then
+  exec xterm -geometry "$GEOMETRY" -T "$TITLE" -e bash -lc "$COMMAND"
+fi
+
+exec "$ROOT/scripts/starmail"

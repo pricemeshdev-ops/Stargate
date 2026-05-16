@@ -58,6 +58,8 @@ Mercury owns:
 - mailbox templates
 - diagnostic routing templates
 - gateway diagnostic presentation
+- Google Drive sync command posture
+- DriveSync exchange boundary
 - future StarMail service restart procedure
 - attached STARGATE service templates and restart plans
 
@@ -97,3 +99,25 @@ Add templates and shell contracts before adding live functions. Every live integ
 - dry-run behavior
 - operator command
 - test fixture
+
+## ORG Terminal Design Rule
+
+Every new terminal surface must declare its launch geometry:
+
+- fixed-size TUI: provide an opener script that launches the terminal at the intended columns and rows
+- responsive TUI: document that it should open in the current or full-screen terminal
+- embedded shell: document the parent shell and command route
+
+Desktop shortcuts must call opener scripts for fixed-size TUIs. Do not rely on the desktop default terminal size.
+
+## Google Drive Sync Rule
+
+Google Drive sync is an operator-controlled STARGATE feature.
+
+The launcher publication lane is one-way Local -> My Drive. Do not add pull behavior to the launcher root.
+
+The only approved Drive-to-local ingress lane is:
+
+- `/home/user/AA-SG-LAUNCHER/DriveSync`
+
+Files pulled into `DriveSync` must be reviewed before being moved into PriceMESH, PriceSEER, PriceLIVE, Library, or STARGATE.

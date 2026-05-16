@@ -50,6 +50,7 @@ STARGATE v3 initial surfaces:
 - Animal Reports shell
 - state ledger shell
 - shaper report shell
+- E3I-0001 report/TUI shell contract: `STARGATE/docs/E3I_0001_REPORT_TUI_CONTRACT.md`
 
 ## Cross-System
 
@@ -59,5 +60,20 @@ Shared local operator surfaces:
 - StarEye
 - Pipeline
 - Blog Library
+- Google Drive Sync
 - legacy Epoch 2 gateway handoff
 
+## Google Drive Sync
+
+Role:
+
+- publish the launcher workspace to My Drive
+- expose files to Google Drive and ChatGPT apps
+- isolate inbound Drive files before they enter repo surfaces
+
+STARGATE v3 initial surfaces:
+
+- `AA-SG-LAUNCHER` one-way publication shell
+- `DriveSync` two-way exchange shell
+- dry-run-first rclone command contract
+- backup-protected sync operations

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=STARGATE v3 Gateway
+Comment=PRICEORG Epoch 3 gateway portal blank shell
+Exec=/home/user/AA-SG-LAUNCHER/STARGATE/scripts/open-stargate-gateway
+Icon=/home/user/AA-SG-LAUNCHER/STARGATE/assets/stargate-v3-red-inverted-pentagram.svg
+Terminal=false
+Categories=Utility;
+StartupNotify=false

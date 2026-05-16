@@ -5,11 +5,100 @@ mode = "boilerplate"
 root = "/home/user/AA-SG-LAUNCHER/STARGATE"
 legacy_epoch2_root = "/home/user/PriceSEER"
 live_integrations_enabled = false
+identity = "red inverted pentagram"
+icon_path = "/home/user/AA-SG-LAUNCHER/STARGATE/assets/stargate-v3-red-inverted-pentagram.svg"
+runtime_topology = "LIVE / MESH / SEER / ORG"
+runtime_topology_interpretation = "gateway shell"
+
+[desktop]
+portal_entry = "/home/user/AA-SG-LAUNCHER/STARGATE/desktop/stargate-v3.desktop"
+starmail_entry = "/home/user/AA-SG-LAUNCHER/STARGATE/desktop/stargate-v3-starmail.desktop"
+portal_command = "/home/user/AA-SG-LAUNCHER/STARGATE/scripts/stargate"
+starmail_command = "/home/user/AA-SG-LAUNCHER/STARGATE/scripts/starmail"
+portal_terminal_launcher = "/home/user/AA-SG-LAUNCHER/STARGATE/scripts/open-stargate-gateway"
+starmail_terminal_launcher = "/home/user/AA-SG-LAUNCHER/STARGATE/scripts/open-starmail"
+portal_terminal_geometry = "160x44"
+starmail_terminal_geometry = "132x38"
+terminal_required = true
+live_integrations_enabled = false
 
 [owners]
+user = "USER"
+supervisor = "LUCY"
+animal = "ANUBIS"
+price_mesh = "SAMAEL"
+price_seer = "ODIN"
+research = "EUCLID"
+gateway = "MERCURY"
 starmail = "Mercury"
 price_seer_signoff = "Odin"
 planning = "Euclid"
+
+[[org_surfaces]]
+key = "u"
+label = "USER"
+owner = "USER"
+status = "SHELL"
+
+[[org_surfaces]]
+key = "lu"
+label = "LUCY"
+owner = "LUCY"
+status = "SHELL"
+
+[[org_surfaces]]
+key = "an"
+label = "ANUBIS"
+owner = "ANUBIS"
+status = "SHELL"
+
+[[org_surfaces]]
+key = "sa"
+label = "SAMAEL"
+owner = "SAMAEL"
+status = "SHELL"
+
+[[org_surfaces]]
+key = "od"
+label = "ODIN"
+owner = "ODIN"
+status = "SHELL"
+
+[[org_surfaces]]
+key = "eu"
+label = "EUCLID"
+owner = "EUCLID"
+status = "SHELL"
+
+[[org_surfaces]]
+key = "me"
+label = "MERCURY"
+owner = "MERCURY"
+status = "SHELL"
+
+[[topology_stages]]
+key = "live"
+label = "LIVE"
+owner = "ANUBIS"
+status = "SHELL"
+
+[[topology_stages]]
+key = "mesh"
+label = "MESH"
+owner = "SAMAEL"
+status = "SHELL"
+
+[[topology_stages]]
+key = "seer"
+label = "SEER"
+owner = "ODIN"
+status = "SHELL"
+
+[[topology_stages]]
+key = "org"
+label = "ORG"
+owner = "LUCY"
+status = "SHELL"
 
 [[sections]]
 key = "animal"
@@ -40,4 +129,3 @@ status = "SHELL"
 key = "epoch2"
 label = "Epoch 2 Legacy Gateway"
 status = "LOCKED_REFERENCE"
-

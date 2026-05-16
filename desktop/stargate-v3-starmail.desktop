@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=STARGATE StarMail v3
+Comment=PRICEORG Epoch 3 StarMail blank shell
+Exec=/home/user/AA-SG-LAUNCHER/STARGATE/scripts/open-starmail
+Icon=/home/user/AA-SG-LAUNCHER/STARGATE/assets/stargate-v3-red-inverted-pentagram.svg
+Terminal=false
+Categories=Utility;
+StartupNotify=false
